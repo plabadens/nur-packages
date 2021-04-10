@@ -14,6 +14,8 @@ rec {
   modules = import ./modules; # NixOS modules
   overlays = import ./overlays; # nixpkgs overlays
 
+  edmarketconnector = python3Packages.edmarketconnector;
+
   pythonPackages = pkgs.makeOverridable (import pkgs/python-modules) {
     inherit pkgs;
     pythonPackages = pkgs.pythonPackages;
