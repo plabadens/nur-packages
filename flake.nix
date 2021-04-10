@@ -1,7 +1,7 @@
 {
   description = "plabadens' NUR reporsitory";
 
-  inputs.nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
+  inputs.nixpkgs.url = "nixpkgs";
 
   outputs = { self, nixpkgs }: let
     systems = [
